@@ -1,0 +1,41 @@
+name: Feedback / 使用反馈
+description: Share a confusing result, a bug, or an idea. 中文和英文均可。
+title: '[Feedback] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying ExplainLab! A short, specific observation is enough.
+        感谢体验 ExplainLab！一条具体的发现就很有帮助。
+        This is a public issue. / 提交内容会公开显示。
+  - type: dropdown
+    id: experiment
+    attributes:
+      label: Experiment / 实验
+      options:
+        - Retry storm / 重试风暴
+        - Cache stampede / 缓存击穿
+        - Queue overload / 队列拥堵
+        - Interface or other / 界面或其他
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What did you notice? / 你发现了什么？
+      description: What was confusing, useful, or unexpected? For bugs, include what you expected and how to reproduce it. / 哪一点难懂、有帮助或不符合预期？遇到错误时，请描述预期结果和复现步骤。
+      placeholder: One specific observation is enough. / 描述一条具体的发现即可。
+    validations:
+      required: true
+  - type: input
+    id: scenario
+    attributes:
+      label: Scenario link (optional) / 场景链接（选填）
+      description: Use Share scenario in the lab to copy your parameters and seed. / 在实验室点击「分享场景」，复制包含参数和种子的链接。
+      placeholder: https://zhzhg-dev.github.io/explainlab/
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device (optional) / 浏览器和设备（选填）
+      description: Helpful for layout, playback, and export problems. / 界面、播放或导出问题建议填写。
+      placeholder: Chrome on Windows / Safari on iPhone

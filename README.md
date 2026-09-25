@@ -5,7 +5,9 @@
 <p align="center"><a href="https://zhzhg-dev.github.io/explainlab/">Open the lab ↗</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="docs/MODEL.md">How the model works</a></p>
 <p align="center"><a href="https://github.com/zhzhg-dev/explainlab/actions/workflows/pages.yml"><img src="https://github.com/zhzhg-dev/explainlab/actions/workflows/pages.yml/badge.svg" alt="Tests and Pages deployment"></a> <img src="https://img.shields.io/badge/license-MIT-c9f27c" alt="MIT license"></p>
 
-![ExplainLab comparing fixed retries with exponential backoff and jitter](docs/images/retry-storm.png)
+![A real ExplainLab replay comparing fixed retries with exponential backoff and jitter](docs/images/retry-storm-demo.gif)
+
+[Static screenshot](docs/images/retry-storm.png) · [28-second video](https://github.com/zhzhg-dev/explainlab/releases/download/v0.1.0/explainlab-demo-en.mp4) · [Give feedback](https://github.com/zhzhg-dev/explainlab/issues/new?template=feedback.yml)
 
 Reading about a retry storm is easy. Seeing your “helpful” retries fill a queue is different.
 
@@ -80,7 +82,7 @@ docs/MODEL.md      Model assumptions and measurement definitions
 
 Small, accurate experiments are more useful than a giant catalogue. Ideas for later releases include circuit breakers, load balancing, and cache eviction. These are ideas, not implemented features.
 
-Found a misleading result? Open an issue with the scenario link, what you expected, and the model assumption in question. Contributions to correctness, accessibility, translations, and reproducible examples are especially welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a misleading result or a confusing control? [Use the short feedback form](https://github.com/zhzhg-dev/explainlab/issues/new?template=feedback.yml). A scenario link and what you expected help reproduce the issue. English and Chinese are welcome. Contributions to correctness, accessibility, translations, and reproducible examples are especially welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Inspired by the engineering explanations from [AWS](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/), [Cloudflare](https://blog.cloudflare.com/sometimes-i-cache/), and [Google SRE](https://sre.google/sre-book/handling-overload/). This project is independent of those organizations.
 

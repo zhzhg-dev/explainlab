@@ -4,7 +4,9 @@
 
 [打开在线实验室](https://zhzhg-dev.github.io/explainlab/) · [English](README.md) · [模型说明](docs/MODEL.md)
 
-![重试风暴实验的真实界面](docs/images/retry-storm.png)
+![重试风暴实验的真实运行回放](docs/images/retry-storm-demo.gif)
+
+[静态截图](docs/images/retry-storm.png) · [28 秒中文字幕演示](https://github.com/zhzhg-dev/explainlab/releases/download/v0.1.0/explainlab-demo-zh.mp4) · [提交反馈](https://github.com/zhzhg-dev/explainlab/issues/new?template=feedback.yml)
 
 ExplainLab 是一个开源的交互式系统实验室。两种策略接收**完全相同的请求流量**，你可以改变负载、超时和并发容量，观察请求如何流动、队列如何积压，以及策略有什么代价。
 
@@ -64,7 +66,7 @@ npm run format
 
 ## 参与改进
 
-如果结果令人困惑，请提交 issue，附上场景链接、预期现象，以及你认为存在问题的模型假设。欢迎改进模型准确性、无障碍体验、翻译和可复现示例。请参阅 [贡献指南](CONTRIBUTING.md)。
+如果结果或操作令人困惑，可以填写[简短反馈表](https://github.com/zhzhg-dev/explainlab/issues/new?template=feedback.yml)，支持中文和英文。场景链接和预期现象能帮助复现问题。欢迎改进模型准确性、无障碍体验、翻译和可复现示例。请参阅 [贡献指南](CONTRIBUTING.md)。
 
 后续可考虑熔断器、负载均衡和缓存淘汰；它们尚未实现，不属于当前版本功能。
 
